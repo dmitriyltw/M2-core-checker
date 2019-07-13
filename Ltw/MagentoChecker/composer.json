@@ -1,0 +1,24 @@
+{
+    "name": "ltw/module-magentochecker",
+    "description": "A module that checks basic magento files on smell code",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "email": "dims.ltw@gmail.com",
+            "name": "Dmitriy Litvinov"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.0.0||~7.1.0||~7.2.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ltw\\MagentoChecker\\": ""
+        }
+    }
+}

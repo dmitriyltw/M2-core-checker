@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job name="Ltw_filechecker" instance="Ltw\MagentoChecker\Cron\FileChecker" method="execute">
+			<config_path>crontab/default/jobs/ltw_magentochecker/schedule/cron_expr</config_path>
+		</job>
+		<job name="Ltw_filecompare" instance="Ltw\MagentoChecker\Cron\FileCompare" method="execute">
+			<config_path>crontab/default/jobs/ltw_magentochecker/schedule/cron_expr</config_path>
+		</job>
+	</group>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Ltw\MagentoChecker\Api\FileRepositoryInterface" type="Ltw\MagentoChecker\Model\FileRepository"/>
+	<preference for="Ltw\MagentoChecker\Api\Data\FileInterface" type="Ltw\MagentoChecker\Model\Data\File"/>
+	<preference for="Ltw\MagentoChecker\Api\Data\FileSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<preference for="Ltw\MagentoChecker\Api\TempFileRepositoryInterface" type="Ltw\MagentoChecker\Model\TempFileRepository"/>
+	<preference for="Ltw\MagentoChecker\Api\Data\TempFileInterface" type="Ltw\MagentoChecker\Model\Data\TempFile"/>
+	<preference for="Ltw\MagentoChecker\Api\Data\TempFileSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<preference for="Ltw\MagentoChecker\Api\ClientFileReceiverInterface" type="Ltw\MagentoChecker\Model\OriginalFile\ClientFileReceiver"/>
+
+	<type name="Ltw\MagentoChecker\Model\FileScanner\IgnoreFolder">
+		<arguments>
+			<argument name="ignoredFolders" xsi:type="array">
+				<item name="vendor_folder_1" xsi:type="string">allure-codeception</item>
+			</argument>
+		</arguments>
+	</type>
+</config>
